@@ -6,7 +6,7 @@
     <title>Document</title>
     <script>
 
-        var num = parseInt(prompt("digite sua nota"));
+        var num = parseInt(prompt("digite sua nota (0 a 100)"));
         if ((num <= 100) && (num >= 90)){
             alert("sua nota é A")
         } else if ((num < 90) && (num >= 80)){
@@ -17,11 +17,14 @@
             alert("Sua nota é D")
         } else if (num < 60){
             alert("sua nota é F")
+        } else if (num > 100){
+            alert("você digitou um numero maior que 100")
         }
+
 
     </script>
 </head>
 <body>
-    
+    <a href="menu.html"><button>aperte aqui</button></a>
 </body>
 </html>
